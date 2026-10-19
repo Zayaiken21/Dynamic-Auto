@@ -53,5 +53,5 @@ class API(unittest.TestCase):
   self.assertEqual(self.req('/api/admin/cars',auth=True)[0],401)
  def test_frontend_routes(self):
   for name in ['index','inventory','vehicle','contact','about','privacy','admin']:
-   code,html=self.req('/'+name+'.html',raw=True);self.assertEqual(code,200);self.assertIn(b'Dynamic Auto',html)
+   code,html=self.req('/'+name+'.html',raw=True);self.assertEqual(code,200);self.assertIn(b'Dynamic All Star Auto Sales LLC',html)
 if __name__=='__main__':unittest.main()

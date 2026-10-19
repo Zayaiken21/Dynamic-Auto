@@ -1,4 +1,4 @@
-# Dynamic Auto — first working version
+# Dynamic All Star Auto Sales LLC — first working version
 
 Buildless, responsive HTML/CSS/JavaScript frontend for GitHub Pages, with a separate Python API, SQLite database, and durable photo uploads. No fake owner login or browser-local inventory. Instagram: https://www.instagram.com/dynamicauto1/
 

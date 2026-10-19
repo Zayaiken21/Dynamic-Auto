@@ -1,4 +1,4 @@
-"""Dynamic Auto API. Python 3.12+, no third-party dependencies. Run behind HTTPS."""
+"""Dynamic All Star Auto Sales LLC API. Python 3.12+, no third-party dependencies. Run behind HTTPS."""
 import os, json, sqlite3, hashlib, secrets, time, base64, re, io
 from pathlib import Path
 from http.server import ThreadingHTTPServer, BaseHTTPRequestHandler
