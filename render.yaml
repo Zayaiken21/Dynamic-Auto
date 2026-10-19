@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: dynamic-auto-api
+    runtime: python
+    plan: starter
+    buildCommand: python -m py_compile backend/server.py
+    startCommand: python backend/server.py
+    healthCheckPath: /api/health
+    disk:
+      name: dynamic-auto-data
+      mountPath: /var/data
+      sizeGB: 1
+    envVars:
+      - key: DATA_DIR
+        value: /var/data
+      - key: OWNER_USERNAME
+        value: owner
+      - key: OWNER_PASSWORD_SALT
+        sync: false
+      - key: OWNER_PASSWORD_HASH
+        sync: false
+      - key: ALLOWED_ORIGINS
+        sync: false
